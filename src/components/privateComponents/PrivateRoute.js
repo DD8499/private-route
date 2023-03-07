@@ -3,7 +3,7 @@ import { Navigate, Outlet } from "react-router-dom";
 import Navbar from "../Navbar";
 
 const PrivateRoute = () => {
-    const auth = false
+    const auth = true
     return (<>
         <Navbar />
         {auth ? <Outlet /> : <Navigate to="/auth-error" />}
